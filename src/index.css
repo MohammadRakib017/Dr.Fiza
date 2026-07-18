@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+  --color-primary-teal: #0F766E;
+  --color-secondary-turquoise: #14B8A6;
+  --color-luxury-gold: #D4AF37;
+  --color-bg-light: #F8FCFC;
+  --color-dark-text: #1F2937;
+  --color-light-gray: #E5E7EB;
+}
+
+@layer utilities {
+  .grid-pattern {
+    background-image: radial-gradient(rgba(15, 118, 110, 0.05) 1.5px, transparent 1.5px);
+    background-size: 24px 24px;
+  }
+  
+  .dark-grid-pattern {
+    background-image: radial-gradient(rgba(212, 175, 55, 0.05) 1.5px, transparent 1.5px);
+    background-size: 24px 24px;
+  }
+  
+  .glass {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(15, 118, 110, 0.08);
+    backdrop-filter: blur(16px);
+  }
+
+  .glass-dark {
+    background: rgba(15, 23, 23, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(16px);
+  }
+
+  .text-stroke-gold {
+    -webkit-text-stroke: 1px #D4AF37;
+    color: transparent;
+  }
+
+  .accent-line {
+    width: 60px;
+    height: 3px;
+    background: #D4AF37;
+    border-radius: 9999px;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #F8FCFC;
+  }
+  body {
+    background-color: #F8FCFC;
+    color: #1F2937;
+  }
+  
+  html.dark {
+    background-color: #081212;
+  }
+  body.dark {
+    background-color: #081212;
+    color: #E5E7EB;
+  }
+}

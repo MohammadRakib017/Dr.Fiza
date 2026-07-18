@@ -1,0 +1,6 @@
+{
+  "name": "Dr. Fiza - Dental Clinic Kuwait",
+  "description": "Premium luxury website for Dr. Fiza's dental clinic specializing in orthodontics, cosmetic dentistry, and comprehensive dental care in Kuwait.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
